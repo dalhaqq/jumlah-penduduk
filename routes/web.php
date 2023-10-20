@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/create/get-kabupaten/{provinsi_id}', [PendudukController::class, 'get-kabupaten'])->middleware('csp');
+Route::get('/create/get-kabupaten/{provinsi_id}', [PendudukController::class, 'getKabupaten']);
 Route::resource('/', PendudukController::class);
 
 Route::resource('/provinsi', ProvinsiController::class);
